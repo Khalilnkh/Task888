@@ -15,8 +15,9 @@ namespace Manage
         static void Main()
         {
             GroupController _groupController = new GroupController();
-            GroupRepository _groupRepository = new GroupRepository();   
+             
             StudentRepository _studentRepository = new StudentRepository();
+            GroupRepository groupRepository = new GroupRepository();
             
 
             ConsoleHelpers.WriteTextWithColor(ConsoleColor.Green, "Welcome");
@@ -64,8 +65,10 @@ namespace Manage
                                 _groupController.GetGroupByName();
                                 break;
                             case (int)Options.CreatStudent:
-                                
-                               
+                                _groupController.CreateGroup();
+                              break;
+                            case (int)Options.UpdateStudent:
+                                _groupController.UpdateGroup();
                                 break;
                             case (int)Options.GetAllStudentsbyGroup:
                                 _groupController.GetGroupByName();

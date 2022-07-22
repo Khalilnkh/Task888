@@ -17,9 +17,6 @@ namespace Core.Constant
         CreatStudent,
         UpdateStudent,
         DeleteStudent,
-
-
-      
-
+        GetAllStudentsbyGroup,
     }
 }
